@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Utils", "Utils\Utils.shproj", "{9065ED0B-2792-4075-B94F-44A9383DC35C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SavingIsForPuppies", "Projects\Mods\SavingIsForPuppies\SavingIsForPuppies\SavingIsForPuppies.csproj", "{BE68FFC0-3741-46B5-B447-6A6B61671F6C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SavingIsForPansies", "Projects\Mods\SavingIsForPansies\SavingIsForPansies\SavingIsForPansies.csproj", "{BE68FFC0-3741-46B5-B447-6A6B61671F6C}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace nl.flukeyfiddler.Utils
+namespace nl.flukeyfiddler.bt.Utils
 {
     public static class FileOps
     {

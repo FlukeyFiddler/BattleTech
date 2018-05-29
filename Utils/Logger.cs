@@ -1,15 +1,14 @@
 ﻿using System;
 using System.IO;
 
-namespace nl.flukeyfiddler.Utils
+namespace nl.flukeyfiddler.bt.Utils
 {
     public static class Logger
     {
 
-        public static void LogError(Exception ex)
+        public static void LogError(string logFilePath, Exception ex)
         {
-            string filePath = "mods/MyMod/Log.txt";
-            using (StreamWriter writer = new StreamWriter(filePath, true))
+            using (StreamWriter writer = new StreamWriter(logFilePath, true))
             {
                 writer.WriteLine("Message :" + ex.Message + "<br/>" + Environment.NewLine + "StackTrace :" + ex.StackTrace +
                    "" + Environment.NewLine + "Date :" + DateTime.Now.ToString());
@@ -17,10 +16,9 @@ namespace nl.flukeyfiddler.Utils
             }
         }
 
-        public static void LogLine(String line)
+        public static void LogLine(string logFilePath, string line)
         {
-            string filePath = "mods/MyMod/Log.txt";
-            using (StreamWriter writer = new StreamWriter(filePath, true))
+            using (StreamWriter writer = new StreamWriter(logFilePath, true))
             {
                 writer.WriteLine(line + Environment.NewLine + "Date :" + DateTime.Now.ToString());
                 writer.WriteLine(Environment.NewLine + "-----------------------------------------------------------------------------" + Environment.NewLine);
