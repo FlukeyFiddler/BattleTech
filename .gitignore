@@ -260,6 +260,5 @@ paket-files/
 __pycache__/
 *.pyc
 
-# Mods and Projects dirs
-Mods/
+# Projects dir (for sub repos)
 Projects/
