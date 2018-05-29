@@ -9,11 +9,11 @@
     <Import_RootNamespace>nl.flukeyfiddler.Utils</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)Examples\Patches.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Examples\MyMod.cs" />
+    <None Include="$(MSBuildThisFileDirectory)Examples\Patches.cs" />
+    <None Include="$(MSBuildThisFileDirectory)Examples\MyMod.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)FileOps.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Logger.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)PatchTutorial.cs" />
+    <None Include="$(MSBuildThisFileDirectory)Examples\Logger.cs" />
+    <None Include="$(MSBuildThisFileDirectory)Examples\PatchTutorial.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)RuntimeInjection\RuntimeInjector.cs">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Compile>

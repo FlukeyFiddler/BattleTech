@@ -8,7 +8,7 @@ namespace nl.flukeyfiddler.Utils
 
         public static void LogError(Exception ex)
         {
-            string filePath = "mods/NotSoPermanentEvasion/Log.txt";
+            string filePath = "mods/MyMod/Log.txt";
             using (StreamWriter writer = new StreamWriter(filePath, true))
             {
                 writer.WriteLine("Message :" + ex.Message + "<br/>" + Environment.NewLine + "StackTrace :" + ex.StackTrace +
@@ -19,7 +19,7 @@ namespace nl.flukeyfiddler.Utils
 
         public static void LogLine(String line)
         {
-            string filePath = "mods/NotSoPermanentEvasion/Log.txt";
+            string filePath = "mods/MyMod/Log.txt";
             using (StreamWriter writer = new StreamWriter(filePath, true))
             {
                 writer.WriteLine(line + Environment.NewLine + "Date :" + DateTime.Now.ToString());
