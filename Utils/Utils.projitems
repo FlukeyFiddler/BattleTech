@@ -9,6 +9,8 @@
     <Import_RootNamespace>nl.flukeyfiddler.bt.Utils</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Examples\copyToModFolder.bat" />
+    <None Include="$(MSBuildThisFileDirectory)Examples\DebugPatches.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)LogFilePath.cs" />
     <None Include="$(MSBuildThisFileDirectory)Examples\StaticClassWithSettableField.cs" />
     <None Include="$(MSBuildThisFileDirectory)Examples\Patches.cs" />
