@@ -12,8 +12,7 @@ namespace nl.flukeyfiddler.bt.Utils
                 return File.ReadAllText(filePath);
             } catch (Exception ex)
             {
-                Logger.LogError(ex);
-                return null;
+                throw ex;
             }
         }
     }
