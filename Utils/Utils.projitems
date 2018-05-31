@@ -12,6 +12,7 @@
     <None Include="$(MSBuildThisFileDirectory)Examples\copyToModFolder.bat" />
     <None Include="$(MSBuildThisFileDirectory)Examples\DebugPatches.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)LogFilePath.cs" />
+    <None Include="$(MSBuildThisFileDirectory)Examples\PatchGeneric.cs" />
     <None Include="$(MSBuildThisFileDirectory)Examples\StaticClassWithSettableField.cs" />
     <None Include="$(MSBuildThisFileDirectory)Examples\Patches.cs" />
     <None Include="$(MSBuildThisFileDirectory)Examples\MyMod.cs" />
@@ -24,6 +25,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="$(MSBuildThisFileDirectory)Examples\gitignore.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Examples\JSONTimelineEvents\mod.json" />
+    <Content Include="$(MSBuildThisFileDirectory)Examples\JSONTimelineEvents\newEvents\first_event.json" />
+    <Content Include="$(MSBuildThisFileDirectory)Examples\JSONTimelineEvents\newEvents\random_event_1.json" />
+    <Content Include="$(MSBuildThisFileDirectory)Examples\JSONTimelineEvents\newEvents\random_event_2.json" />
+    <Content Include="$(MSBuildThisFileDirectory)Examples\JSONTimelineEvents\newEvents\random_event_3.json" />
+    <Content Include="$(MSBuildThisFileDirectory)Examples\JSONTimelineEvents\newEvents\second_event.json" />
+    <Content Include="$(MSBuildThisFileDirectory)Examples\JSONTimelineEvents\newMilestones\milestone_linear_events.json" />
+    <Content Include="$(MSBuildThisFileDirectory)Examples\JSONTimelineEvents\newMilestones\milestone_random_events.json" />
     <Content Include="$(MSBuildThisFileDirectory)Examples\mod.json" />
   </ItemGroup>
 </Project>
