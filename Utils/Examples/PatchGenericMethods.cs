@@ -3,7 +3,7 @@ using System.Reflection;
 
 namespace nl.flukeyfiddler.Utils.Examples
 {
-    public class MyMod
+    public class PatchGenericMethods
     {
         public static void Init()
         {
