@@ -1,0 +1,9 @@
+﻿{
+    "Name": "AddEventsMod",
+    "Enabled": true,
+	"Manifest": [
+        { "Type": "SimGameEventDef", "Path": "NewEvents\\"},
+		{ "Type": "SimGameMilestoneDef", "Path": "NewMilestones\\"}
+    ]
+    
+}

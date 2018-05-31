@@ -1,0 +1,52 @@
+{
+    "Description" : {
+        "Id" : "milestone_random_events",
+        "Name" : "Game start",
+        "Details" : "",
+        "Icon" : "",
+        "Cost" : 0,
+        "Rarity" : 10,
+        "Purchasable" : false
+    },
+    "Scope" : "Company",
+    "Requirements" : null,
+    "Results" : [
+        {
+            "Scope" : "Company",
+            "Requirements" : null,
+            "AddedTags" : {},
+            "RemovedTags" : {},
+            "Stats" : null,
+            "Actions" : null,
+            "ForceEvents" : [
+				{
+					"EventID" : "random_event_1",
+					"MinDaysWait" : 0,
+					"MaxDaysWait" : 10,
+					"Probability" : 1,
+					"RetainPilot" : true,
+					"Scope" : "Company"					
+				},
+				{
+					"EventID" : "random_event_2",
+					"MinDaysWait" : 0,
+					"MaxDaysWait" : 10,
+					"Probability" : 1,
+					"RetainPilot" : true,
+					"Scope" : "Company"					
+				},
+				{
+					"EventID" : "random_event_3",
+					"MinDaysWait" : 10,
+					"MaxDaysWait" : 0,
+					"Probability" : 1,
+					"RetainPilot" : true,
+					"Scope" : "Company"					
+				}
+			],
+            "TemporaryResult" : false,
+            "ResultDuration" : 0
+        }
+    ],
+    "Repeatable" : true
+}
