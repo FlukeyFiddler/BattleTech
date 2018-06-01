@@ -9,17 +9,18 @@
     <Import_RootNamespace>nl.flukeyfiddler.bt.Utils</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Fiddling\DataContractsAndAddingToEnums.cs" />
     <None Include="$(MSBuildThisFileDirectory)Examples\copyToModFolder.bat" />
     <None Include="$(MSBuildThisFileDirectory)Examples\DebugPatches.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)LogFilePath.cs" />
-    <None Include="$(MSBuildThisFileDirectory)Examples\PatchGeneric.cs" />
+    <None Include="$(MSBuildThisFileDirectory)Examples\PatchGenericMethods.cs" />
     <None Include="$(MSBuildThisFileDirectory)Examples\StaticClassWithSettableField.cs" />
     <None Include="$(MSBuildThisFileDirectory)Examples\Patches.cs" />
     <None Include="$(MSBuildThisFileDirectory)Examples\MyMod.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)FileOps.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)LoggerUtil.cs" />
     <None Include="$(MSBuildThisFileDirectory)Examples\PatchTutorial.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)RuntimeInjection\RuntimeInjector.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Fiddling\RuntimeInjection\RuntimeInjector.cs">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Compile>
   </ItemGroup>

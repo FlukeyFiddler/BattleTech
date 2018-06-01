@@ -23,6 +23,14 @@ namespace nl.flukeyfiddler.bt.Utils
                 writer.WriteLine(line + Environment.NewLine + "Date :" + DateTime.Now.ToString());
                 writer.WriteLine(Environment.NewLine + "-----------------------------------------------------------------------------" + Environment.NewLine);
             }
-        }   
+        }
+
+        public static void LogMinimal(LogFilePath LogFilePath, string line)
+        {
+            using (StreamWriter writer = new StreamWriter(LogFilePath.path, true))
+            {
+                writer.WriteLine(line + Environment.NewLine);
+            }
+        }
     }
 }
