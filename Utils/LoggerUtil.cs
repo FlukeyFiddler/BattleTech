@@ -14,7 +14,7 @@ namespace nl.flukeyfiddler.bt.Utils
         {
             using (StreamWriter writer = new StreamWriter(LogFilePath.path, true))
             {
-                writer.WriteLine(getInfoLine());
+                writer.WriteLine(getInfoLine(), caller);
                 writer.WriteLine("Message: " + ex.Message);
                 writer.WriteLine("Stacktrace: " + ex.StackTrace);
                 writer.WriteLine(endLine);
@@ -25,7 +25,7 @@ namespace nl.flukeyfiddler.bt.Utils
         {
             using (StreamWriter writer = new StreamWriter(LogFilePath.path, true))
             {
-                writer.WriteLine(getInfoLine());
+                writer.WriteLine(getInfoLine(), caller);
                 writer.WriteLine(line);
                 writer.WriteLine(endLine);
             }
