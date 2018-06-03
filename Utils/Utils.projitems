@@ -9,6 +9,8 @@
     <Import_RootNamespace>nl.flukeyfiddler.bt.Utils</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Fiddling\AutoContinueOnStartup.cs" />
+    <None Include="$(MSBuildThisFileDirectory)Examples\CharacterCreationBackgroundPatch.cs" />
     <None Include="$(MSBuildThisFileDirectory)Fiddling\DataContractsAndAddingToEnums.cs" />
     <None Include="$(MSBuildThisFileDirectory)Examples\copyToModFolder.bat" />
     <None Include="$(MSBuildThisFileDirectory)Examples\DebugPatches.cs" />
