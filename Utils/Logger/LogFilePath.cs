@@ -1,4 +1,4 @@
-﻿namespace nl.flukeyfiddler.bt.Utils
+﻿namespace nl.flukeyfiddler.bt.Utils.Logger
 {
     public class LogFilePath
     {

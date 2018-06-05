@@ -1,8 +1,9 @@
 ﻿using System;
 using System.IO;
 using System.Reflection;
+using System.Text.RegularExpressions;
 
-namespace nl.flukeyfiddler.bt.Utils
+namespace nl.flukeyfiddler.bt.Utils.Logger
 {
     public static class LoggerUtil
     {
@@ -10,7 +11,7 @@ namespace nl.flukeyfiddler.bt.Utils
             Environment.NewLine + "---------------------------------------" +
             "--------------------------------------" + Environment.NewLine;
 
-        public static void LogError(LogFilePath LogFilePath, Exception ex, MethodBase caller = null)
+        public static void Error(LogFilePath LogFilePath, Exception ex, MethodBase caller = null)
         {
             using (StreamWriter writer = new StreamWriter(LogFilePath.path, true))
             {
@@ -21,7 +22,7 @@ namespace nl.flukeyfiddler.bt.Utils
             }
         }
 
-        public static void LogLine(LogFilePath LogFilePath, string line, MethodBase caller = null)
+        public static void Line(LogFilePath LogFilePath, string line, MethodBase caller = null)
         {
             using (StreamWriter writer = new StreamWriter(LogFilePath.path, true))
             {
@@ -31,7 +32,7 @@ namespace nl.flukeyfiddler.bt.Utils
             }
         }
 
-        public static void LogMinimal(LogFilePath LogFilePath, string line)
+        public static void Minimal(LogFilePath LogFilePath, string line)
         {
             using (StreamWriter writer = new StreamWriter(LogFilePath.path, true))
             {
@@ -39,7 +40,7 @@ namespace nl.flukeyfiddler.bt.Utils
             }
         }
 
-        public static void LogBlock(LogFilePath LogFilePath, string[] lines, MethodBase caller = null)
+        public static void Block(LogFilePath LogFilePath, string[] lines, MethodBase caller = null)
         {
             using (StreamWriter writer = new StreamWriter(LogFilePath.path, true))
             {
@@ -50,6 +51,19 @@ namespace nl.flukeyfiddler.bt.Utils
                     writer.WriteLine(line);
                 }
 
+                writer.WriteLine(endLine);
+            }
+        }
+
+        public static void GameStarted(LogFilePath LogFilePath)
+        {
+            using (StreamWriter writer = new StreamWriter(LogFilePath.path, true))
+            {
+                for(int i = 0; i <= 3; i++)
+                {
+                    writer.WriteLine(Regex.Replace(endLine, Environment.NewLine, ""));
+                }
+                writer.WriteLine(DateTime.Now.ToString() + ": Game started");
                 writer.WriteLine(endLine);
             }
         }
