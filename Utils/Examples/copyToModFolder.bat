@@ -1,1 +1,0 @@
-﻿xcopy /YE "D:\Projects\Battletech\BattleTech\Projects\Mods\IronMechMode\Build\IronMechMode" "C:\Program Files (x86)\Steam\steamapps\common\BATTLETECH\Mods\"

@@ -13,7 +13,7 @@
     <None Include="$(MSBuildThisFileDirectory)Fiddling\AutoContinueOnStartup.cs" />
     <None Include="$(MSBuildThisFileDirectory)Examples\CharacterCreationBackgroundPatch.cs" />
     <None Include="$(MSBuildThisFileDirectory)Fiddling\DataContractsAndAddingToEnums.cs" />
-    <None Include="$(MSBuildThisFileDirectory)Examples\copyToModFolder.bat" />
+    <None Include="$(MSBuildThisFileDirectory)Examples\projectPropertyToCopyFilesAfterBuild" />
     <None Include="$(MSBuildThisFileDirectory)Examples\DebugPatches.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Logger\LogFilePath.cs" />
     <None Include="$(MSBuildThisFileDirectory)Examples\PatchGenericMethods.cs" />
