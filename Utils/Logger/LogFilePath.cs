@@ -2,11 +2,12 @@
 {
     public class LogFilePath
     {
-        public static string path = "mods\\FlukeyFiddlerUnsetLog.txt";
+        private readonly string defaultPath = "mods\\FlukeyFiddlerUnsetLog.txt";
+        public string path { get; set; }
 
-        public LogFilePath(string path)
+        public LogFilePath(string path = null)
         {
-            LogFilePath.path = path;
+            this.path = path ?? defaultPath;
         }
     }
 }
