@@ -13,7 +13,7 @@ namespace nl.flukeyfiddler.bt.Utils.Logger
 
         public static void Error(LogFilePath logFilePath, Exception ex, MethodBase caller = null)
         {
-            using (StreamWriter writer = new StreamWriter(logFilePath.path))
+            using (StreamWriter writer = new StreamWriter(logFilePath.path, true))
             {
                 writer.WriteLine(getInfoLineString(caller));
                 writer.WriteLine("Message: " + ex.Message);
@@ -24,7 +24,7 @@ namespace nl.flukeyfiddler.bt.Utils.Logger
 
         public static void Line(LogFilePath logFilePath, string line, MethodBase caller = null)
         {
-            using (StreamWriter writer = new StreamWriter(logFilePath.path)) {
+            using (StreamWriter writer = new StreamWriter(logFilePath.path, true)) {
                 writer.WriteLine(getInfoLineString(caller));
                 writer.WriteLine(line);
                 writer.WriteLine(endLine);
@@ -33,7 +33,7 @@ namespace nl.flukeyfiddler.bt.Utils.Logger
 
         public static void InfoLine(LogFilePath logFilePath, MethodBase caller = null)
         {
-            using (StreamWriter writer = new StreamWriter(logFilePath.path))
+            using (StreamWriter writer = new StreamWriter(logFilePath.path, true))
             {
                 writer.WriteLine(getInfoLineString(caller));
             }
@@ -41,7 +41,7 @@ namespace nl.flukeyfiddler.bt.Utils.Logger
 
         public static void Minimal(LogFilePath logFilePath, string line)
         {
-            using (StreamWriter writer = new StreamWriter(logFilePath.path))
+            using (StreamWriter writer = new StreamWriter(logFilePath.path, true))
             {
                 writer.WriteLine(line);
             }
@@ -49,7 +49,7 @@ namespace nl.flukeyfiddler.bt.Utils.Logger
 
         public static void EndLine(LogFilePath logFilePath)
         {
-            using (StreamWriter writer = new StreamWriter(logFilePath.path))
+            using (StreamWriter writer = new StreamWriter(logFilePath.path, true))
             {
                 writer.WriteLine(endLine);
             }
@@ -57,7 +57,7 @@ namespace nl.flukeyfiddler.bt.Utils.Logger
 
         public static void Block(LogFilePath logFilePath, string[] lines, MethodBase caller = null)
         {
-            using (StreamWriter writer = new StreamWriter(logFilePath.path))
+            using (StreamWriter writer = new StreamWriter(logFilePath.path, true))
             {
                 writer.WriteLine(getInfoLineString(caller));
 
@@ -72,7 +72,7 @@ namespace nl.flukeyfiddler.bt.Utils.Logger
 
         public static void GameStarted(LogFilePath logFilePath)
         {
-            using (StreamWriter writer = new StreamWriter(logFilePath.path))
+            using (StreamWriter writer = new StreamWriter(logFilePath.path, false))
             {
                 for (int i = 0; i <= 3; i++)
                 {
