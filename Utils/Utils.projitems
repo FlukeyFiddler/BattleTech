@@ -9,6 +9,9 @@
     <Import_RootNamespace>nl.flukeyfiddler.bt.Utils</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)MethodName.cs" />
+    <None Include="$(MSBuildThisFileDirectory)Examples\MessageCenterExample.cs" />
+    <None Include="$(MSBuildThisFileDirectory)Examples\TraverseExample.cs" />
     <None Include="$(MSBuildThisFileDirectory)Fiddling\MessageCenterHooking.cs" />
     <None Include="$(MSBuildThisFileDirectory)Examples\ExampleLogger.cs" />
     <None Include="$(MSBuildThisFileDirectory)Fiddling\AutoContinueOnStartup.cs" />
