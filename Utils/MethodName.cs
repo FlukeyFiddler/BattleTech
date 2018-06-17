@@ -2,8 +2,10 @@
 {
     public class MethodName
     {
-        public MethodName(string name) { }
+        private string name;
 
-        public new string ToString { get; }
+        public MethodName(string name) { this.name = name; }
+
+        public string Name { get => name; set => name = value; }
     }
 }

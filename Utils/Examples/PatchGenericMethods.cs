@@ -7,7 +7,6 @@ namespace nl.flukeyfiddler.Utils.Examples
     {
         public static void Init()
         {
-
             var harmony = HarmonyInstance.Create("nl.flukeyfiddler.MyMod");
 
             var original = typeof(PilotRepresentation).GetMethod("PlayPilotVO");
