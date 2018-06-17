@@ -9,11 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IronMechMode", "Projects\Mo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RamboSixTheGarbageMan", "Projects\Mods\RamboSixTheGarbageMan\RamboSixTheGarbageMan\RamboSixTheGarbageMan.csproj", "{A10DCA7E-2E41-4B46-8BF3-A25FAE48330B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TurnDirectorDebug", "Projects\Mods\TurnDirectorDebug\TurnDirectorDebug\TurnDirectorDebug.csproj", "{5D972340-852D-44EE-946E-99CF6E43889A}"
-EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		Utils\Utils.projitems*{5d972340-852d-44ee-946e-99cf6e43889a}*SharedItemsImports = 4
 		Utils\Utils.projitems*{9065ed0b-2792-4075-b94f-44a9383dc35c}*SharedItemsImports = 13
 		Utils\Utils.projitems*{a10dca7e-2e41-4b46-8bf3-a25fae48330b}*SharedItemsImports = 4
 		Utils\Utils.projitems*{be68ffc0-3741-46b5-b447-6a6b61671f6c}*SharedItemsImports = 4
@@ -31,10 +28,6 @@ Global
 		{A10DCA7E-2E41-4B46-8BF3-A25FAE48330B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A10DCA7E-2E41-4B46-8BF3-A25FAE48330B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A10DCA7E-2E41-4B46-8BF3-A25FAE48330B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5D972340-852D-44EE-946E-99CF6E43889A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5D972340-852D-44EE-946E-99CF6E43889A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5D972340-852D-44EE-946E-99CF6E43889A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5D972340-852D-44EE-946E-99CF6E43889A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
