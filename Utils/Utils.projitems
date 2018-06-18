@@ -9,6 +9,8 @@
     <Import_RootNamespace>nl.flukeyfiddler.bt.Utils</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Fiddling\CreateTravelContractAndForceOnLoad.cs" />
+    <None Include="$(MSBuildThisFileDirectory)Examples\GenericPopup.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MethodName.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)CombatTeamFactionGuids.cs" />
     <None Include="$(MSBuildThisFileDirectory)Examples\MessageCenterExample.cs" />
