@@ -16,7 +16,6 @@ namespace nl.flukeyfiddler.bt.Utils.Examples
             Traverse.Create(simGameInstance).Method("TriggerSaveNow", new object[] {
                 typeof(SaveReason), typeof(bool)}).
                 GetValue(SaveReason.SIM_GAME_EVENT_FIRED, true);
-            
         }
     }
 }

@@ -5,12 +5,17 @@ VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Utils", "Utils\Utils.shproj", "{9065ED0B-2792-4075-B94F-44A9383DC35C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RamboSixTheGarbageMan", "Projects\Mods\RamboSixTheGarbageMan\RamboSixTheGarbageMan\RamboSixTheGarbageMan.csproj", "{A10DCA7E-2E41-4B46-8BF3-A25FAE48330B}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SavetyOffLine", "Projects\Mods\SavetyOffLine\SavetyOffLine\SavetyOffLine.csproj", "{BE68FFC0-3741-46B5-B447-6A6B61671F6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharacterCreationTree", "Projects\Mods\CharacterCreationTree\CharacterCreationTree\CharacterCreationTree\CharacterCreationTree.csproj", "{58BF19EA-0284-4992-9D7A-36EA1A511E7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTModTemplate", "Projects\Mods\BTModTemplate\BTModTemplate\BTModTemplate\BTModTemplate.csproj", "{4CF3107A-B7C1-4D52-B91E-22651E45A119}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MissionLoadingFixesAndDebug", "Projects\Mods\MissionLoadingFixesAndDebug\MissionLoadingFixesAndDebug\MissionLoadingFixesAndDebug.csproj", "{A10DCA7E-2E41-4B46-8BF3-A25FAE48330B}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Utils\Utils.projitems*{58bf19ea-0284-4992-9d7a-36ea1a511e7e}*SharedItemsImports = 4
 		Utils\Utils.projitems*{9065ed0b-2792-4075-b94f-44a9383dc35c}*SharedItemsImports = 13
 		Utils\Utils.projitems*{a10dca7e-2e41-4b46-8bf3-a25fae48330b}*SharedItemsImports = 4
 		Utils\Utils.projitems*{be68ffc0-3741-46b5-b447-6a6b61671f6c}*SharedItemsImports = 4
@@ -20,14 +25,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A10DCA7E-2E41-4B46-8BF3-A25FAE48330B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A10DCA7E-2E41-4B46-8BF3-A25FAE48330B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A10DCA7E-2E41-4B46-8BF3-A25FAE48330B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A10DCA7E-2E41-4B46-8BF3-A25FAE48330B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BE68FFC0-3741-46B5-B447-6A6B61671F6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BE68FFC0-3741-46B5-B447-6A6B61671F6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE68FFC0-3741-46B5-B447-6A6B61671F6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE68FFC0-3741-46B5-B447-6A6B61671F6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58BF19EA-0284-4992-9D7A-36EA1A511E7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58BF19EA-0284-4992-9D7A-36EA1A511E7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58BF19EA-0284-4992-9D7A-36EA1A511E7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58BF19EA-0284-4992-9D7A-36EA1A511E7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CF3107A-B7C1-4D52-B91E-22651E45A119}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CF3107A-B7C1-4D52-B91E-22651E45A119}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CF3107A-B7C1-4D52-B91E-22651E45A119}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CF3107A-B7C1-4D52-B91E-22651E45A119}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A10DCA7E-2E41-4B46-8BF3-A25FAE48330B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A10DCA7E-2E41-4B46-8BF3-A25FAE48330B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A10DCA7E-2E41-4B46-8BF3-A25FAE48330B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A10DCA7E-2E41-4B46-8BF3-A25FAE48330B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
